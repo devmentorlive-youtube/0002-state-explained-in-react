@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { PencilIcon } from "@heroicons/react/solid";
 import json from "@/data/customers";
 import Datatable from "@/ui/datatable";
 import Modal from "@/ui/modal";
