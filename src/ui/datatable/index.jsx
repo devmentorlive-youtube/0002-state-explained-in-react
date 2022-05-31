@@ -1,6 +1,6 @@
 export default function Datatable({
   rows = [],
-  columns = Object.keys(rows[0]),
+  columns = [],
   renderRow = () => {},
 }) {
   return (

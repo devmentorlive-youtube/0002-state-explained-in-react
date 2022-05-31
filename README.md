@@ -1,46 +1,25 @@
-# DevmentorLive NextJS Starter Template
+# React State Explained - A beginner React Tutorial
 
-## Getting Started
+A huge thank you for Vercel for sponsoring the demo to this lesson so it will always be available to you!
 
-To create an app using this starter
+![Powered by Vercel](https://raw.githubusercontent.com/devmentorlive-youtube/0002-state-explained-in-react/main/public/powered-by-vercel.svg)
 
-```bash
-npx create-next-app your-app-name -e https://github.com/devmentorlive-youtube/next-tailwind-starter
-```
+## DevmentorLive #0002
 
-## This template uses [TailwindCSS](https://tailwindcss.com/)!
+## What you will learn from building this project
 
-## To run your server (development)
+- What to use to manage state
+- Where to put your state
+- How to subscribe to another component's state
+- How to do global state
+- Custom contexts and providers
+- State best practices
+- React, TailwindCSS, NextJS, and programming best practices and general knowledge
 
-```
-cd your-app-name
-npm run dev
-```
+## See this in action!
 
-## Folder structure
+https://0002-state-explained-in-react.vercel.app/
 
-```bash
-src
-├── features
-├── pages
-│   └── index.jsx
-├── ui
-└── index.jsx
-```
+## Watch the video tutorial on youtube
 
-This app uses a modified/simplified version of [Atomic Design](https://bradfrost.com/blog/post/atomic-web-design/), better suited for modern web development.
-
-
-### /ui
-
-This folder is for your "lego blocks", single purpose React components that can be combined together to make more complicated components, known as Features
-
-
-### /features
-
-This folder is for more complex components, or features. Features are created by composing many UI components and usually, state
-
-
-### /pages
-
-This folder is for navigable components. A router automagically creates urls for anything in this folder. To create a page, combine features and ui components and put them in a component in this page. Typically state is managed in the feature, and any props that come from the server are passed through pages via the return object from getServerSideProps. Those props are then passed down into features as props, or put into a context.
+- currently in production

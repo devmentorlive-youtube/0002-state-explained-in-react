@@ -8,11 +8,12 @@ import CustomerForm from "./form";
 export default function Customers({}) {
   const [customers, setCustomers] = useState(json);
   const [selectedCustomer, setSelectedCustomer] = useState(false);
-  const columns = Object.keys(customers[0]);
+  const columns = Object.keys(json[0]);
 
   return (
     <>
       <Datatable
+        columns={columns}
         rows={customers.slice(0, 50)}
         renderRow={(row) => (
           <tr className="bg-gray-300 even:bg-gray-200 text-black">
