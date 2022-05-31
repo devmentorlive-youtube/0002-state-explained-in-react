@@ -1,7 +1,5 @@
-
 import { useState } from "react";
 import Tool from "./tool";
-
 
 export default function Toolbar({}) {
   const [open, setOpen] = useState(true);
@@ -41,20 +39,3 @@ export default function Toolbar({}) {
     </div>
   );
 }
-<<<<<<< HEAD
-=======
-
-function Tool({ name, small = false, active = false, onClick = () => {} }) {
-  return (
-    <div
-      onClick={onClick}
-      className={`${
-        active ? "bg-blue-500 border-blue-400" : "border-gray-700"
-      } border ${
-        small ? "w-8 h-8" : "w-24 h-24"
-      }  rounded-xl flex items-center justify-center`}>
-      {name.split(" ").map((w) => w[0])}
-    </div>
-  );
-}
->>>>>>> toolbar open/close
