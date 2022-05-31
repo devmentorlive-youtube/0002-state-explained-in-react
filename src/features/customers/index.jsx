@@ -1,11 +1,13 @@
 import { useState } from "react";
-import customers from "@/data/customers";
+import { PencilIcon } from "@heroicons/react/solid";
+import json from "@/data/customers";
 import Datatable from "@/ui/datatable";
 import Modal from "@/ui/modal";
 
 import CustomerForm from "./form";
 
 export default function Customers({}) {
+  const [customers, setCustomers] = useState(json);
   const [selectedCustomer, setSelectedCustomer] = useState(false);
   const columns = Object.keys(customers[0]);
 
@@ -34,7 +36,16 @@ export default function Customers({}) {
           />
           <div className="w-full flex flex-row-reverse my-8">
             <button
-              onClick={() => setSelectedCustomer(undefined)}
+              onClick={() => {
+                setCustomers((prev) =>
+                  prev.map((customer) =>
+                    customer._id === selectedCustomer._id
+                      ? selectedCustomer
+                      : customer
+                  )
+                );
+                setSelectedCustomer(undefined);
+              }}
               className="bg-blue-500 text-white font-bold rounded py-2 px-8">
               Save
             </button>

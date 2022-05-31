@@ -1,4 +1,4 @@
-export default function Datatble({
+export default function Datatable({
   rows = [],
   columns = Object.keys(rows[0]),
   renderRow = () => {},

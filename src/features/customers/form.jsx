@@ -1,3 +1,5 @@
+import TextField from "@/ui/text-field";
+
 export default function CustomerForm({ value, onChange = () => {} }) {
   return (
     <div className="flex flex-col gap-8">
@@ -80,20 +82,6 @@ export default function CustomerForm({ value, onChange = () => {} }) {
           </div>
         </div>
       </div>
-    </div>
-  );
-}
-
-function TextField({ value, placeholder, onChange = () => {} }) {
-  return (
-    <div className="w-full">
-      <input
-        className=" p-2 font-thin text-black w-full rounded bg-gray-600"
-        type="text"
-        placeholder={placeholder}
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-      />
     </div>
   );
 }
