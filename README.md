@@ -1,8 +1,8 @@
 # React State Explained - A beginner React Tutorial
 
-A huge thank you for Vercel for sponsoring the demo to this lesson so it will always be available to you!
+A huge thank you for Netlify for hosting the demo to this lesson so it will always be available to you!
 
-![Powered by Vercel](https://raw.githubusercontent.com/devmentorlive-youtube/0002-state-explained-in-react/main/public/powered-by-vercel.svg)
+![Powered by Netlify](https://raw.githubusercontent.com/devmentorlive-youtube/0001-datatables-in-react-sort-filter-page/main/public/powered-by-netlify-light.png)
 
 ## DevmentorLive #0002
 
@@ -18,7 +18,7 @@ A huge thank you for Vercel for sponsoring the demo to this lesson so it will al
 
 ## See this in action!
 
-https://0002-state-explained-in-react.vercel.app/
+https://devmentorlive-0002-demo.netlify.app/
 
 ## Watch the video tutorial on youtube
 
